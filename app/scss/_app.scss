@@ -3,8 +3,7 @@
   height: 40.625rem;
 }
 .app {
-  --app-load: 500ms;
-  --app-chats-load-time: 700ms;
+  --app-chats-load-time: 900ms;
   @include breakpoint-up(large) {
     position: relative;
     top: 10%;
@@ -23,7 +22,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // animation: app-load var(--app-load) ease-in;
   &__innercontainer {
     width: 15.8rem;
     height: 34.5rem;
