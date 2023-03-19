@@ -1,0 +1,22 @@
+.main__content {
+  @include breakpoint-up(large) {
+    max-width: 30%;
+    text-align: left;
+    margin: 0 0;
+  }
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  h4 {
+    font-size: 2.375rem;
+    color: $VeryDarkDesaturatedViolet;
+    padding-top: 2.5rem;
+  }
+  p {
+    color: $DarkGrayishViolet;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+  }
+}
