@@ -3,6 +3,8 @@
   height: 40.625rem;
 }
 .app {
+  --app-load: 500ms;
+  --app-chats-load-time: 700ms;
   @include breakpoint-up(large) {
     position: relative;
     top: 10%;
@@ -21,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: app-load var(--app-load) ease-in;
   &__innercontainer {
     width: 15.8rem;
     height: 34.5rem;
@@ -39,7 +42,7 @@
     padding-top: 32px;
     padding-inline: 16px;
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
@@ -90,6 +93,14 @@
   &__chatbox {
     padding: 12px 10px 11px;
   }
+  &__chat-animate {
+    animation-name: chats-load;
+    animation-duration: var(--app-chats-load-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--app-load);
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
   &__chat {
     width: 9.5rem;
     font-size: 0.625rem;
@@ -101,6 +112,7 @@
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 12px;
     margin-bottom: 0.5625rem;
+
     &-left {
       background-color: hsl(204, 7%, 85%);
       color: $moderateviolet;
@@ -116,6 +128,7 @@
       margin-bottom: 15px;
     }
   }
+
   &__right-chart-container {
     margin-top: 1rem;
     margin-left: 4.8125rem;
@@ -159,7 +172,7 @@
     position: relative;
     margin-top: 0.5rem;
   }
-  input[type="text"] {
+  input[type='text'] {
     width: 228px;
     height: 36px;
     padding-left: 1rem;
@@ -188,5 +201,28 @@
     img {
       width: 6px;
     }
+  }
+}
+
+@keyframes app-load {
+  0% {
+    left: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes chats-load {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
