@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URl](https://chat-app-coderdannie.netlify.app/)
+- Solution URL: [Solution URl](https://www.frontendmentor.io/solutions/chat-app-illustrustion-OWqls5xfU8)
 - Live Site URL: [Live site URL](https://chat-app-coderdannie.netlify.app/)
 
 ## My process
@@ -42,6 +42,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - SCSS
+
+## What I learned
+
+My greatest challenge while building this project is positioning elements in the right place without negatively affecting the site's responsiveness. it took some time before I was able to make the site responsive.
+Am not really good at CSS animation yet and I hope the little that I could add makes sense. I learnt how to position element in css
 
 ## Author
 
