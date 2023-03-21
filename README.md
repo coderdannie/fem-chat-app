@@ -12,7 +12,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URl](https://www.frontendmentor.io/solutions/chat-app-illustrustion-OWqls5xfU8)
-- Live Site URL: [Live site URL](https://chat-app-coderdannie.netlify.app/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/chat-app-illustrustion-OWqls5xfU8)
+- Live Site URL: [Click here](https://chat-app-coderdannie.netlify.app/)
 
 ## My process
 
